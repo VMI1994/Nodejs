@@ -1,5 +1,5 @@
 # download and install Node.js (you may need to restart the terminal)
-nvm install 18
+nvm install 22
 
 echo "PM2 Process manager will now be installed"
 sleep 2
