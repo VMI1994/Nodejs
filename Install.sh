@@ -12,9 +12,10 @@ exec bash
 node -v # should print `v18.20.3`
 # verifies the right NPM version is in the environment
 npm -v # should print `10.7.0`
+
 echo "PM2 Process manager will now be installed"
 sleep 2
-sudo npm install -g pm2
+npm install pm2@latest -g
 cmd=$(pm2 startup | grep sudo)
 sudo $cmd
 exit
