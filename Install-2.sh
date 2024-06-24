@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # download and install Node.js (you may need to restart the terminal)
 nvm install 22
 
