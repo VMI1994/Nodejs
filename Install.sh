@@ -10,3 +10,10 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 sudo apt update
 sudo apt install -y nodejs
 sudo apt install -y npm
+
+echo "PM2 Process manager will now be installed"
+sleep 2
+sudo npm install -g pm2
+cmd=$(pm2 startup | grep sudo)
+sudo $cmd
+exit
