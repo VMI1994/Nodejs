@@ -7,6 +7,8 @@ echo
 echo "We will now install node.js"
 
 # installs nvm (Node Version Manager)
+clear
+echo "Installing Node Version Manager"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 sleep 2
 export NVM_DIR="$HOME/.nvm"
@@ -18,8 +20,11 @@ sleep 1
 
 # Install node.js
 # download and install Node.js (you may need to restart the terminal)
+clear
+echo "Installing NodeJS version $version"
 nvm install $version
 
+clear
 echo "PM2 Process manager will now be installed"
 sleep 2
 npm install pm2@latest -g
