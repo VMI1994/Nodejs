@@ -11,6 +11,7 @@ echo "We will now install node.js"
 sudo apt update 
 which curl
 if [ $? != 0 ]
+then
   sudo apt install -y curl
 fi
 
@@ -33,7 +34,8 @@ sleep 2
 nvm install $version
 source ~/.bashrc
 
-
+# Install Node Package Manager
+sudi apt install -y npm
 
 #Install PM2
 clear
