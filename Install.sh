@@ -25,6 +25,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.bashrc
 sleep 2
+exec bash
 
 # Install node.js
 # download and install Node.js (you may need to restart the terminal)
@@ -35,7 +36,7 @@ nvm install $version
 source ~/.bashrc
 
 # Install Node Package Manager
-sudi apt install -y npm
+sudo apt install -y npm
 
 #Install PM2
 clear
