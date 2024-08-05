@@ -18,4 +18,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 clear
-exec bash && bash step-2.sh
+echo "type 'nvm install 22' at the command prompt before running step2.sh"
+sleep 2
+source ~/.bashrc
+exec bash
+exit
+
