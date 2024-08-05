@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # install dependencies
+clear
+echo "First install curl and npm"
 sudo apt update 
-which curl
-if [ $? != 0 ]
-then
-  sudo apt install -y curl
-fi
-sudo apt install npm
+sudo apt install -y npm curl
 
 # installs nvm (Node Version Manager)
 clear
@@ -23,4 +20,3 @@ sleep 2
 source ~/.bashrc
 exec bash
 exit
-
