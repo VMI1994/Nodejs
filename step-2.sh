@@ -3,7 +3,7 @@
 # Install node.js
 # download and install Node.js (you may need to restart the terminal)
 clear
-echo "Installing NodeJS version $version"
+echo "Installing NodeJS version 22"
 sleep 2
 nvm install 22
 
