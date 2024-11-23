@@ -9,4 +9,6 @@ npm install pm2@latest -g
 sleep 2
 cmd=$(pm2 startup | grep sudo)
 echo $cmd | bash
+sudo reboot now &
 exit
+
