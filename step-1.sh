@@ -10,13 +10,19 @@ sudo apt install -y npm curl
 clear
 echo "Installing Node Version Manager"
 sleep 2
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-clear
-echo "System will reboot; run step2.sh after reboot"
-echo "Hit enter to reboot the system"
-read junk
-sudo reboot now &
-exit
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 24
+
+# Verify the Node.js version:
+node -v # Should print "v24.2.0".
+nvm current # Should print "v24.2.0".
+
+# Verify npm version:
+npm -v # Should print "11.3.0".
+
