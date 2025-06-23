@@ -26,3 +26,12 @@ nvm current # Should print "v24.2.0".
 # Verify npm version:
 npm -v # Should print "11.3.0".
 
+clear
+echo "PM2 Process manager will now be installed"
+sleep 2
+npm install pm2@latest -g
+sleep 2
+cmd=$(pm2 startup | grep sudo)
+echo $cmd | bash
+sudo reboot now &
+exit
