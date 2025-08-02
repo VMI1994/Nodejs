@@ -20,11 +20,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 nvm install 24
 
 # Verify the Node.js version:
-node -v # Should print "v24.2.0".
-nvm current # Should print "v24.2.0".
-
+clear
+node -v 
+nvm current 
 # Verify npm version:
-npm -v # Should print "11.3.0".
+npm -v 
 
 clear
 echo "PM2 Process manager will now be installed"
