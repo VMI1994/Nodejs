@@ -4,6 +4,7 @@
 clear
 echo "First install curl and npm"
 sudo apt update 
+sudo apt upgrade -yq
 sudo apt install -y npm curl
 
 # installs nvm (Node Version Manager)
