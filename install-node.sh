@@ -28,6 +28,8 @@ node -v
 nvm current 
 # Verify npm version:
 npm -v 
+echo "Press ENTER to continue"
+read junk
 
 clear
 echo "PM2 Process manager will now be installed"
